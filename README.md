@@ -2,7 +2,7 @@
 
 This document shall help us planning our factories in a _satisfactory_ way.
 
-**Sectors** are different parts of the map that have been restricted to a single purpose. For example, one sector could be the _production of Iron Plates_, another one the _production of Iron Rods_, one could be the *Central HUB*.
+**Sectors** are different parts of the map that have been restricted to a single purpose. For example, one sector could be the _production of Iron Plates_, another one the _production of Iron Rods_, one could be the *Central HUB*. A single sector is quite large and can easily take hours to plan and to construct.
 
 **Logistics** describe different ways of transportation, as well as organization of these transports. For example, a cross-sector Main Bus could be part of logistics, but also an inner-sector Conveyor Belt organization could be part of logistics.
 
@@ -29,8 +29,20 @@ Located buildings:
 
 Status: Idea
 
-The Main Bus is a unified transportation system on that every single resource produced in the game is being shipped at least once.
+The Main Bus is a unified transportation system on that every single _usable item_ (for production or for construction) produced in the game is being shipped at least once. Typically, only a single Main Bus exists in a game world; though (e.g. to overcome bandwith limits on Conveyor Belts) multiple Main Buses could be constructed, this usually contradicts efficiency and costs too much built-time.
 
-Traditionally, main buses consist out of [Conveyor Belts](https://satisfactory.gamepedia.com/Conveyor_Belt) (see main bus designs from Factorio). But if the take-off of resources is less frequent, e.g. only once per sector, a Main Bus could also be realized using [Trains](https://satisfactory.gamepedia.com/Electric_Locomotive).
+Traditionally, main buses consist out of [Conveyor Belts](https://satisfactory.gamepedia.com/Conveyor_Belt) (see main bus designs from Factorio). But if the take-off of items is less frequent, e.g. only once per sector, a Main Bus could also be realized using [Trains](https://satisfactory.gamepedia.com/Electric_Locomotive).
 
-An efficient potential use-case for a Main Bus could be in a growing factory, where each **Sector** receives a buffer-storage for each resource. Then, all resources necessary for the expansion of the sector (or a potential remodelling/updating to higher tiers) would be available on-spot and would not have to be transported by the _player_ manually, overcoming theoratically all inventory limitations of [Trucks](https://satisfactory.gamepedia.com/Truck) (48 slots) and [player Inventories](https://satisfactory.gamepedia.com/Inventory) (68 slots).
+Not allowed:
+ - **Frequent item take-off**: With 47 Components and 12 Ores, the Main Bus will be large; a frequent take-off of items is not allowed: this would only be possible using Conveyor Belts, but they do not allow for a sufficient throughput (at least on common-used components such as [Screws](https://satisfactory.gamepedia.com/Screw) or [Iron Ore](https://satisfactory.gamepedia.com/Iron_Ore)), and therefore be either a) a bottle-neck for the whole Satisfactory, or b) most belts would end somewhere in the middle of the bus because of being emptied, while others aren't used for first part of the Main Bus, and therefore contradicting the idea of the Main Bus itself. High-bandwidth-transportation has to be utilized on a minimalistic Factory-to-Factory- or Machine-to-Machine- Belt-System
+
+
+#### Main Bus for construction
+
+Status: Idea
+
+An efficient potential use-case for a Main Bus could be in a growing factory, where each **Sector** receives a buffer-storage for each resource. Then, all components necessary for the expansion of the sector (or a potential remodelling/updating to higher tiers) would be available on-spot and would not have to be transported by the _player_ manually, overcoming theoratically all inventory limitations of [Trucks](https://satisfactory.gamepedia.com/Truck) (48 slots) and [player Inventories](https://satisfactory.gamepedia.com/Inventory) (68 slots).
+
+Components **not** on the Main Bus for construction:
+ - Iron Ingot (without use for construction)
+ - Copper Ingot (without use for construction)
